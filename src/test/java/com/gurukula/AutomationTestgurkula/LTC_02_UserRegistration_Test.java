@@ -87,7 +87,9 @@ public class LTC_02_UserRegistration_Test extends base {
 				{ "gopisrikanth1", "gg", "May@2019", "october@2019",
 						"Your e-mail is invalid.Your e-mail is required to be at least 5 characters.", "flagY" },
 				// when email is invalid and more than than 50 characters
-				{ "gopisrikanth1", "ggggggggggggggggggggggggggggggggggggggggggggggggggg", "May@2019", "october@2019",
+				{ "gopisrikanth1",
+						"ggggggggggggggggggggggggggggggggggggggggggggggdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+						"May@2019", "october@2019",
 						"Your e-mail is invalid.Your e-mail cannot be longer than 50 characters.", "flagY" },
 				// when user id contains special characters
 				{ "gopisrikanth#", "gopisrikanth1@gmail.com", "May@2019", "october@2019",

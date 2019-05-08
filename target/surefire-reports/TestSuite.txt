@@ -1,17 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 58, Failures: 13, Errors: 0, Skipped: 1, Time elapsed: 942.341 sec <<< FAILURE!
-PTC_RM_01_to_RM16_Verify_User_registarion_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_02_UserRegistration_Test)  Time elapsed: 2.432 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Your e-mail is invalid.Your e-mail cannot be longer than 50 characters.] but found [Your e-mail is invalid.]
+Tests run: 59, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 944.166 sec <<< FAILURE!
+PTC_AM_02_Verify_User_InValid_login(com.gurukula.AutomationTestgurkula.LTC_01_User_Authentication_Test)  Time elapsed: 1.62 sec  <<< FAILURE!
+java.lang.AssertionError: invalid credentails not found expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.gurukula.AutomationTestgurkula.LTC_02_UserRegistration_Test.PTC_RM_01_to_RM16_Verify_User_registarion_with_differentinputcombinations(LTC_02_UserRegistration_Test.java:59)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.gurukula.AutomationTestgurkula.LTC_01_User_Authentication_Test.PTC_AM_02_Verify_User_InValid_login(LTC_01_User_Authentication_Test.java:66)
 
-PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.406 sec  <<< FAILURE!
+PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.365 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Settings saved!] but found []
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -20,7 +18,7 @@ java.lang.AssertionError: expected [Settings saved!] but found []
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test.PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(LTC_03_AcccountManagement_Test.java:61)
 
-PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.693 sec  <<< FAILURE!
+PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.895 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Your first name is required.] but found []
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -29,7 +27,7 @@ java.lang.AssertionError: expected [Your first name is required.] but found []
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test.PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(LTC_03_AcccountManagement_Test.java:67)
 
-PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.631 sec  <<< FAILURE!
+PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.74 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Your last name is required.] but found [Your first name is required.]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -38,7 +36,7 @@ java.lang.AssertionError: expected [Your last name is required.] but found [Your
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test.PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations(LTC_03_AcccountManagement_Test.java:67)
 
-PTC_AC08_to_AC15_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 1.037 sec  <<< FAILURE!
+PTC_AC08_to_AC15_Verify_User_settings_with_differentinputcombinations(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 0.918 sec  <<< FAILURE!
 java.lang.AssertionError: expected [Password changed!] but found []
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
@@ -47,90 +45,12 @@ java.lang.AssertionError: expected [Password changed!] but found []
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test.PTC_AC08_to_AC15_Verify_User_settings_with_differentinputcombinations(LTC_03_AcccountManagement_Test.java:89)
 
-PTC_AC16_InvalidateSession(com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test)  Time elapsed: 0.726 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Session invalidated!] but found []
+PTC_BM_007_to_BM_013_Verify_Createbranch_functionality_withvariousinputs(com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test)  Time elapsed: 5.892 sec  <<< FAILURE!
+java.lang.AssertionError: expected [This field should follow pattern ^[a-zA-Z\s]*$.] but found [This field is required to be at least 5 characters.This field should follow pattern ^[a-zA-Z\s]*$.]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test.PTC_AC16_InvalidateSession(LTC_03_AcccountManagement_Test.java:113)
-
-PTC_BM_007_to_BM_013_Verify_Createbranch_functionality_withvariousinputs(com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test)  Time elapsed: 6.099 sec  <<< FAILURE!
-java.lang.AssertionError: expected [This field should follow pattern ^[a-zA-Z\s]*$.] but found [This field should follow pattern ^[A-Z0-9]*$.]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test.PTC_BM_007_to_BM_013_Verify_Createbranch_functionality_withvariousinputs(LTC_04_BranchesManagement_Test.java:79)
-
-PTC_SM_001_Verify_StaffCreation(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 27.073 sec  <<< FAILURE!
-java.lang.AssertionError: Staff creation is not succesfull expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_001_Verify_StaffCreation(LTC_05_StaffManagement_Test.java:48)
-
-PTC_SM_001_Verify_StaffCreation(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 26.857 sec  <<< FAILURE!
-java.lang.AssertionError: Staff creation is not succesfull expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_001_Verify_StaffCreation(LTC_05_StaffManagement_Test.java:48)
-
-PTC_SM_001_Verify_StaffCreation(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 27.301 sec  <<< FAILURE!
-java.lang.AssertionError: Staff creation is not succesfull expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_001_Verify_StaffCreation(LTC_05_StaffManagement_Test.java:48)
-
-PTC_SM_003_Verify_BranchEditing(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 27.108 sec  <<< FAILURE!
-java.lang.AssertionError: Staff editing is not successfull expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_003_Verify_BranchEditing(LTC_05_StaffManagement_Test.java:61)
-
-PTC_SM_007_to_SM_009_Verify_Createbranch_functionality_withvariousinputs(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 25.873 sec  <<< FAILURE!
-java.lang.AssertionError: expected [This field is required.] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_007_to_SM_009_Verify_Createbranch_functionality_withvariousinputs(LTC_05_StaffManagement_Test.java:75)
-
-PTC_SM_007_to_SM_009_Verify_Createbranch_functionality_withvariousinputs(com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test)  Time elapsed: 5.337 sec  <<< FAILURE!
-org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=74.0.3729.131)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-PUPFFT7', ip: '192.168.178.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Gopi\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52063}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 74.0.3729.131, webStorageEnabled: true}
-Session ID: 56196e46c3a593c635dd7a604aafa50b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:124)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.clear(Unknown Source)
-	at com.gurukula.pageObjects.StaffPage.CreateNewStaffforErrors(StaffPage.java:196)
-	at com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test.PTC_SM_007_to_SM_009_Verify_Createbranch_functionality_withvariousinputs(LTC_05_StaffManagement_Test.java:74)
+	at com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test.PTC_BM_007_to_BM_013_Verify_Createbranch_functionality_withvariousinputs(LTC_04_BranchesManagement_Test.java:81)
 

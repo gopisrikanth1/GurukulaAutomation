@@ -50,6 +50,8 @@ public class LTC_04_BranchesManagement_Test extends base {
 		Assert.assertTrue(branchespage.CreateNewBranch(driver, branch_name, branch_code),
 				"Branch creation is not succesfull");
 	}
+	
+	
 
 	@Test(enabled = true)
 	public void PTC_BM_002_Verify_Branch_view_functionality() {
@@ -78,11 +80,23 @@ public class LTC_04_BranchesManagement_Test extends base {
 		branchespage.CreateNewBranchforErrors(driver, branch_name, branch_code);
 		Assert.assertEquals(branchespage.GethelpErrorfromScreen(driver), expMsg);
 	}
+	
+	@Parameters({ "branch_name", "branch_code" })
+	@Test(enabled = true)
+	public void PTC_BM_001_Verify_BranchCreation2(String branch_name, String branch_code) {
+		branchespage = new BranchesPage(driver);
+		// branchespage.clickOnCreateBranchButton(driver);
+
+		Assert.assertTrue(branchespage.CreateNewBranch(driver, branch_name, branch_code),
+				"Branch creation is not succesfull");
+	}
+	
 
 	@DataProvider(name = "createBranchData")
 	public Object[][] CreateBranchDatasetup() {
 
 		Object[][] createbranchdata = new Object[][] {
+
 				// branch name is less than 5 characters
 				{ "AA", "ABC", "This field is required to be at least 5 characters." },
 				// branch name is more than 20 characters
@@ -96,7 +110,7 @@ public class LTC_04_BranchesManagement_Test extends base {
 				// branch code is not according to the pattern ^[A-Z0-9]*$.
 				{ "ELECTRICAL", "aa", "This field should follow pattern ^[A-Z0-9]*$." },
 				// branch name is not according to the pattern ^[a-zA-Z\\s]*$.
-				{ "ELECTRICAL", "aa", "This field should follow pattern ^[a-zA-Z\\s]*$." }
+				{ "12", "AA", "This field should follow pattern ^[a-zA-Z\\s]*$." }
 
 		};
 

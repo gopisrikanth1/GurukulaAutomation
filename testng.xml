@@ -8,6 +8,7 @@
 	<parameter name="loginhomeTitle" value="You are logged in as user "></parameter>
 	<parameter name="invalidLoginmessage" value="Authentication failed"></parameter>	  
 	<parameter name="invalidEmailid" value="ggggg#dd"></parameter>
+	<parameter name="validEmailid" value="gopisrikanthkosuru@gmail.com"></parameter>
 	<parameter name="validEmailidforUserreg" value="gopisrikanthkosuru@gmail.com"></parameter>
 	<parameter name="validUserIdforUserreg" value="gopisrikanth1"></parameter>
 	<parameter name="validpasswordforUserreg" value="May@2019"></parameter>
