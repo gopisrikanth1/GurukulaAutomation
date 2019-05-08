@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="validUserName" value="admin"></parameter>
+	<parameter name="validPassword" value="admin"></parameter>
+	<parameter name="invalidUserName" value="adddd"></parameter>
+	<parameter name="invalidPassword" value="adddd"></parameter>
+	<parameter name="loginhomeTitle" value="You are logged in as user "></parameter>
+	<parameter name="invalidLoginmessage" value="Authentication failed"></parameter>	  
+	<parameter name="invalidEmailid" value="ggggg#dd"></parameter>
+	<parameter name="validEmailidforUserreg" value="gopisrikanthkosuru@gmail.com"></parameter>
+	<parameter name="validUserIdforUserreg" value="gopisrikanth1"></parameter>
+	<parameter name="validpasswordforUserreg" value="May@2019"></parameter>
+	<parameter name="cnfrmvalidpasswordforUserreg" value="May@2019"></parameter>
+	<parameter name="branch_name" value="CIVILENG"></parameter>
+	<parameter name="branch_code" value="CIV"></parameter>
+	<parameter name="branch_name_new" value="EDITBRANCH"></parameter>
+	<parameter name="branch_code_new" value="UPA"></parameter>
+	<parameter name="staff_name_new" value="STAFFEDIT"></parameter>
+	<parameter name="branch_name_staff_new" value="CIVILENG"></parameter>
+	
+<listeners>
+<listener class-name="com.gurukula.resources.ExtentReporterNG"/>
+</listeners>
+	
+  <test name="Gurukul Automation">
+    <classes>
+     <class name="com.gurukula.AutomationTestgurkula.LTC_01_User_Authentication_Test"/>
+     <class name="com.gurukula.AutomationTestgurkula.LTC_02_UserRegistration_Test"/>
+     <class name="com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test"/>
+	 <class name="com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test"/>
+	 <class name="com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test"/>
+	</classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

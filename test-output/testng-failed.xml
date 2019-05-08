@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="validEmailidforUserreg" value="gopisrikanthkosuru@gmail.com"/>
+  <parameter name="invalidUserName" value="adddd"/>
+  <parameter name="validUserIdforUserreg" value="gopisrikanth1"/>
+  <parameter name="loginhomeTitle" value="You are logged in as user "/>
+  <parameter name="invalidEmailid" value="ggggg#dd"/>
+  <parameter name="invalidPassword" value="adddd"/>
+  <parameter name="branch_name_new" value="EDITBRA"/>
+  <parameter name="branch_code" value="CIV"/>
+  <parameter name="validUserName" value="admin"/>
+  <parameter name="cnfrmvalidpasswordforUserreg" value="May@2019"/>
+  <parameter name="branch_name" value="CIVILENG"/>
+  <parameter name="validPassword" value="admin"/>
+  <parameter name="branch_code_new" value="UPA"/>
+  <parameter name="validpasswordforUserreg" value="May@2019"/>
+  <parameter name="invalidLoginmessage" value="Authentication failed"/>
+  <listeners>
+    <listener class-name="com.gurukula.resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Authentication module(failed)">
+    <classes>
+      <class name="com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement">
+        <methods>
+          <include name="PTC_BM_001_Verify_StaffCreation"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement -->
+    </classes>
+  </test> <!-- Authentication module(failed) -->
+</suite> <!-- Failed suite [Suite] -->

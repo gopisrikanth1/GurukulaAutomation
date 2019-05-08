@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="branch_name_staff_new" value="CIVILENG"/>
+  <parameter name="validEmailidforUserreg" value="gopisrikanthkosuru@gmail.com"/>
+  <parameter name="invalidUserName" value="adddd"/>
+  <parameter name="validUserIdforUserreg" value="gopisrikanth1"/>
+  <parameter name="loginhomeTitle" value="You are logged in as user "/>
+  <parameter name="invalidEmailid" value="ggggg#dd"/>
+  <parameter name="invalidPassword" value="adddd"/>
+  <parameter name="branch_name_new" value="EDITBRANCH"/>
+  <parameter name="branch_code" value="CIV"/>
+  <parameter name="validUserName" value="admin"/>
+  <parameter name="cnfrmvalidpasswordforUserreg" value="May@2019"/>
+  <parameter name="branch_name" value="CIVILENG"/>
+  <parameter name="validPassword" value="admin"/>
+  <parameter name="branch_code_new" value="UPA"/>
+  <parameter name="staff_name_new" value="STAFFEDIT"/>
+  <parameter name="validpasswordforUserreg" value="May@2019"/>
+  <parameter name="invalidLoginmessage" value="Authentication failed"/>
+  <listeners>
+    <listener class-name="com.gurukula.resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Gurukul Automation(failed)">
+    <classes>
+      <class name="com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="PTC_BM_007_to_BM_013_Verify_Createbranch_functionality_withvariousinputs" invocation-numbers="6"/>
+          <include name="setupBeforeTest"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_04_BranchesManagement_Test -->
+      <class name="com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test">
+        <methods>
+          <include name="PTC_SM_003_Verify_BranchEditing" invocation-numbers="0"/>
+          <include name="PTC_SM_007_to_SM_009_Verify_Createbranch_functionality_withvariousinputs" invocation-numbers="1 2"/>
+          <include name="PTC_SM_001_Verify_StaffCreation" invocation-numbers="0 1 2"/>
+          <include name="setupBeforeTest"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_05_StaffManagement_Test -->
+      <class name="com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test">
+        <methods>
+          <include name="PTC_AC01_to_AC07_Verify_User_settings_with_differentinputcombinations" invocation-numbers="0 3 4"/>
+          <include name="closebrowser"/>
+          <include name="PTC_AC08_to_AC15_Verify_User_settings_with_differentinputcombinations" invocation-numbers="0"/>
+          <include name="setupBeforeTest"/>
+          <include name="PTC_AC16_InvalidateSession"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_03_AcccountManagement_Test -->
+      <class name="com.gurukula.AutomationTestgurkula.LTC_02_UserRegistration_Test">
+        <methods>
+          <include name="PTC_RM_01_to_RM16_Verify_User_registarion_with_differentinputcombinations" invocation-numbers="5"/>
+          <include name="setupBeforeTest"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_02_UserRegistration_Test -->
+      <class name="com.gurukula.AutomationTestgurkula.LTC_01_User_Authentication_Test">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="setupBeforeTest"/>
+          <include name="closebrowser"/>
+          <include name="PTC_AM_06_Verify_ResetPassword_button_isenabled_with_validemailid"/>
+        </methods>
+      </class> <!-- com.gurukula.AutomationTestgurkula.LTC_01_User_Authentication_Test -->
+    </classes>
+  </test> <!-- Gurukul Automation(failed) -->
+</suite> <!-- Failed suite [Suite] -->
